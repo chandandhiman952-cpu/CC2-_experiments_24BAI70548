@@ -32,3 +32,47 @@ Code:
                 right = mid - 1
 
         return left
+
+
+
+Experiment 2.1  Implement Queue using Stacks
+
+AIM:Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).
+
+Algorithm: 
+          1. Initialize two empty stacks: stack1 and stack2.
+          2. Push: Insert the element into stack1.
+          3. Pop: If stack2 is empty, move all elements from stack1 to stack2. Remove and return the top element of stack2.
+          4. Peek: If stack2 is empty, move all elements from stack1 to stack2. Return the top element of stack2.
+          5. Empty: Return True if both stack1 and stack2 are empty; otherwise, return False.
+
+
+CODE:
+
+class MyQueue:
+    def __init__(self):
+        self.stack1 = []
+        self.stack2 = []
+
+    def push(self, x):
+        self.stack1.append(x)
+
+    def pop(self):
+        if len(self.stack1) == 0:
+            while len(self.stack1) != 0:
+                value = self.stack1.pop()
+                self.stack2.append(value)
+        return self.stack2.pop()
+
+    def peek(self):
+        if len(self.stack2) == 0:
+            while len(self.stack1) != 0:
+                value = self.stack1.pop()
+                self.stack2.append(value)
+        return self.stack2[-1]
+
+    def empty(self):
+        if len(self.stack1) == 0 and len(self.stack2) == 0:
+            return True
+        else:
+            return False
