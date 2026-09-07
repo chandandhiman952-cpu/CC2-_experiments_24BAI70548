@@ -21,7 +21,11 @@ class Solution(object):
                 return True
         return False
 
-
+LEARNING OUTCOME:
+A) Understand how to detect duplicate elements in an array.
+B) Learn to use sorting for duplicate detection.
+C) Develop array traversal and comparison skills.
+D) Analyze the time and space complexity of the solution.
 
 
 Experiment 1.2 Contain Duplicates2 (219)
@@ -51,3 +55,12 @@ class Solution:
                 return True
             last_index[num] = i
         return False
+
+
+
+
+LEARNING OUTCOME:
+A) Understand how to detect nearby duplicate elements.
+B) Learn to use dictionaries to store element indices.
+C) Apply index-distance conditions in array problems.
+D) Improve efficient problem-solving using hash maps.
