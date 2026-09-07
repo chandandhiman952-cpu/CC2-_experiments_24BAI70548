@@ -31,6 +31,18 @@ Code:
 
 
 
+LEARNING OUTCOME:
+1. Understand the concept of Binary Search.
+2. Use binary search to efficiently search for an element in a sorted array.
+3. Determine the correct insertion position of a target element if it is not present.
+4. Apply the divide-and-conquer technique to reduce search time.
+5. Analyze the algorithm's time complexity O(log n) and space complexity O(1).
+
+
+
+
+
+
 Experiment 2.2  Implement Queue using Stacks
 
 AIM:Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).
@@ -72,3 +84,13 @@ class MyQueue:
             return True
         else:
             return False
+
+
+
+
+Learning Outcomes:
+1. Understand the concept of searching in a rotated sorted array.
+2. Learn how to apply Binary Search to a rotated array.
+3. Identify the sorted half of the array.
+4. Perform efficient searching with O(log n) time complexity.
+5. Understand how to reduce the search space using low, mid, and high.
